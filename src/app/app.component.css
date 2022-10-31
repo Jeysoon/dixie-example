@@ -1,0 +1,48 @@
+h2 {
+  font-weight: bold;
+  color: red;
+}
+.data_source-container > table {
+  display: flex;
+}
+.mat-column-color {
+  width: 32px;
+  padding-right: 24px;
+  text-align: center;
+}
+.mat-column-article {
+  width: 32px;
+  padding-right: 24px;
+  text-align: center;
+}
+.mat-column-size {
+  width: 32px;
+  padding-right: 24px;
+  text-align: center;
+}
+.mat-column-name {
+  width: 32px;
+  padding-right: 24px;
+  text-align: center;
+}
+.mat-column-shape {
+  width: 32px;
+  padding-right: 24px;
+  text-align: center;
+}
+.options-container{
+  display: flex;
+}
+.form-container{
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+}
+.select-att-form {
+  display: flex;
+  margin: 1rem;
+}
+.first-attribute-select{
+  width: 100%;
+  margin: 0 1rem
+}

@@ -1,0 +1,55 @@
+<h3>{{ todoList?.title }}</h3>
+
+<!--
+    Adding item form
+-->
+<label>
+  Add item:
+  <input
+    autocomplete="off"
+    type="text"
+    id="name"
+    #name
+    [(ngModel)]="itemName"
+  />
+</label>
+<button type="submit" (click)="addItem()">Add ToDo</button>
+
+<!--
+
+    Rendering todoItems$
+
+-->
+<ul>
+  <li *ngFor="let item of todoItems$ | async">
+    Item title:
+    <span>
+      {{ item.title }}
+    </span>
+
+    <button
+     style="background-color: red;"
+     (click)="deleteItem(item.id)">Delete this entry
+    </button>
+  </li>
+</ul>
+<!-- Make a table that represent the    attributes
+ Take 2, and insert it into a new table
+ two tables one full and one empty
+ take two columns do something with this
+
+
+Create a database for mock data and populate a mat-table with it
+properties of table (articleId use Math.floor), title, size, color, shape display all five in table
+
+Below the table create a dropdown with all those keys
+select two of them and create a button with Transform on transform click
+
+concatenate the selected data, result will be what i create and go to new table in new database and populate it with created property
+
+[
+  {articleId, customAttribute}
+]
+
+
+Next button transpose take first column or last one and take that and its values with article and push it into the main database -->
